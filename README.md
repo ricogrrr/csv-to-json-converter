@@ -4,11 +4,11 @@ This Python script converts a CSV file into a JSON file using built-in modules.
 
 🚀 Features
 
-Reads data from a CSV file.
-
-Converts the data into JSON format.
-
-Saves the output as a formatted JSON file.
+- Reads data from a CSV file.
+- Converts the data into JSON format.
+- Saves the output as a formatted JSON file.
+- Command-line interface for easy usage.
+- Error handling for file operations.
 
 🔧 Requirements
 
@@ -16,13 +16,18 @@ Ensure you have Python 3.x installed. No additional libraries are required as th
 
 📄 Usage
 
-Place your CSV file in the same directory as the script.
+Run the script from the command line by providing the input CSV file path and the desired output JSON file path.
 
-Update the script with your input CSV filename and desired output JSON filename.
+```bash
+python3 converter.py <input_csv_file> <output_json_file>
+```
 
-Run the script.
+Example:
+```bash
+python3 converter.py Users.csv Test.json
+```
 
-The converted JSON file will be saved in the same directory.
+The converted JSON file will be saved at the specified output path.
 
 📝 Example
 
@@ -35,14 +40,14 @@ Bob,30,bob@example.com
 Output (Test.json):
 
 [
-{
-"name": "Alice",
-"age": "25",
-"email": "alice@example.com"
-},
-{
-"name": "Bob",
-"age": "30",
-"email": "bob@example.com"
-}
+    {
+        "name": "Alice",
+        "age": "25",
+        "email": "alice@example.com"
+    },
+    {
+        "name": "Bob",
+        "age": "30",
+        "email": "bob@example.com"
+    }
 ]
